@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="http://maps.google.com/maps/api/js"></script>
+  <script src="js/gmaps.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="headsection navbar-fixed-top">
+<div class="container">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">
+			<div class="logo"><img src="img/logo.png" class="img-responsive"/></div>
+			<div class="title"><h2><span>Gugi</span>Pinchi</h2></div>
+		  </a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Clients</a></li>
+				<li><a href="#">Contact</a></li>
+			  </ul>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	
+</div>
+</header>
+
+<section class="bannersection">
+	<div class="container">
+		<div class="banner">
+			<h1>Our Unfinished Love Stroy</h1>
+			<p>I wish you would understand my love</p>
+			<button type="button" class="btn btn-success">View Our Strory</button>
+		</div>
+	</div>
+</section>
+
+<section class="servicesection">
+	<div class="container">
+	
+		<div class="row">
+			<div class="col-md-4">
+				<div class="service text-center">
+					<div class="serviceimg">
+						<i class="fa fa-heartbeat"></i>
+					</div>
+					<h2>Heart Still Beats for You</h2>
+					<p>Why you did this to me ? why? You knew how much I loved you. I cannot live without you.</p>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="service text-center">
+					<div class="serviceimg">
+						<i class="fa fa-birthday-cake"></i>
+					</div>
+					<h2>Alone In All Events</h2>
+					<p>Why you did this to me ? why? You knew how much I loved you. I cannot live without you.</p>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="service text-center">
+					<div class="serviceimg">
+						<i class="fa fa-balance-scale"></i>
+					</div>
+					<h2>Who Loves You More?</h2>
+					<p>Why you did this to me ? why? You knew how much I loved you. I cannot live without you.</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</section>
+
+<section class="testimonial">
+	<div class="container">
+		<div class="row">
+			<div class="clientheading text-center"><h2>It Cannot Not End Like This</h2></div>
+				<div class="col-md-4">
+					<div class="clientimg">
+						<img src="img/Incompleted-Love.jpg" class="img-responsive" alt="Love Story"/>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="clientspeech">
+						<i class="fa fa-quote-left"></i>
+						<p>Real love never fade away in this small time. Did you really ever loved me for real? If yes then how could you leave me like this? how did you forget me like this? I can never do that. I can never forget you.</p>
+					</div>
+				</div>
+		</div>
+	</div>
+</section>
+
+<section class="address">
+	<div class="container">
+		<div class="row">
+			<div class="clientheading text-center"><h2>Tell Me How to Live Now</h2></div>
+				<div class="col-md-9">
+					<div class="house">
+						<div class="row">
+							<div class="col-md-5">
+								<i class="fa fa-phone"></i><span>+4915-787976037</span><br>
+								<i class="fa fa-envelope-o"></i><span>rumman.djuice@gmail.com</span>
+							</div>
+							<div class="col-md-4">
+								<i class="fa fa-map-marker"></i>
+								<p class="roadname">Hirschberger Str. 64<br>
+								53119 Bonn</p>
+							
+							</div>
+						</div>
+					</div>
+					<div class="social">
+						<i class="fa fa-facebook"></i>
+						<i class="fa fa-twitter"></i>
+						<a href="https://www.youtube.com/watch?v=aQ0A5_vSnM0" target="_blank"><i class="fa fa-youtube"></i></a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="map">
+						
+						<div id="map" ></div>
+					</div>
+				</div>
+		</div>
+	</div>
+</section>
+
+<div id="scrolltotop">
+	<i class="fa fa-arrow-circle-up"></i>
+</div>
+
+<footer class="footersection text-center">
+	<p>&copy; Copyright Dr. Prof. Pinch Inch</p>
+</footer>
+
+
+<script type="text/javascript">
+
+
+	$(window).scroll(function(){
+		if($(this).scrollTop()>300){
+			$('#scrolltotop').fadeIn();
+		} else {
+			$('#scrolltotop').fadeOut();
+		}
+	});
+
+	$('#scrolltotop').click(function(){
+		$("html, body").animate({
+			scrollTop:0}, 500);
+	});
+
+	
+	//google map
+    var map;
+    $(document).ready(function(){
+      map = new GMaps({
+        el: '#map',
+        lat: 50.7512675,
+        lng: 7.0448164,
+        zoomControl : true,
+		
+        zoomControlOpt: {
+            style : 'SMALL',
+            position: 'TOP_LEFT'
+        },
+        panControl : false,
+        streetViewControl : false,
+        mapTypeControl: false,
+        overviewMapControl: false
+      });
+    });
+</script>
+
+<script type="text/javascript">
+
+</script>
+
+
+</body>
+</html>
